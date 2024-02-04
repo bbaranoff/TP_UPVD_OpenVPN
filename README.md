@@ -8,5 +8,6 @@ Sur une machine virtuelle Ubuntu 22.04 lancer
 sudo apt install git python3-pip
 pip3 install jupyterlab
 git clone https://github.com/bbaranoff/TP_UPVD_OpenVPN/
+cd TP_UPVD_OpenVPN
 jupyter lab
 ```
