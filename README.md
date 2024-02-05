@@ -26,7 +26,8 @@ wget http://download.virtualbox.org/virtualbox/7.0.14/VBoxGuestAdditions_7.0.14.
 sudo mount -o loop VBoxGuestAdditions_7.0.14.iso /mnt
 cd /mnt
 sudo bash VBoxLinuxAdditions.run
-pip3 install jupyterlab
+reboot
+pip3 install jupyterlab PyQtWebEngine
 git clone https://github.com/bbaranoff/TP_UPVD_OpenVPN/
 cd TP_UPVD_OpenVPN
 jupyter lab
