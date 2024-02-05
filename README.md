@@ -21,7 +21,7 @@ Sur une machine **virtuelle** Ubuntu 22.04 lancer
 ```bash
 sudo apt update && sudo apt upgrade -y
 sudo reboot
-sudo apt install -y git python3-pip gcc make perl linux-headers-$(uname -r)
+sudo apt install -y git python3-pip gcc make perl linux-headers-$(uname -r) texlive-xetex texlive-fonts-recommended texlive-plain-generic
 wget http://download.virtualbox.org/virtualbox/7.0.14/VBoxGuestAdditions_7.0.14.iso
 sudo mount -o loop VBoxGuestAdditions_7.0.14.iso /mnt
 cd /mnt
