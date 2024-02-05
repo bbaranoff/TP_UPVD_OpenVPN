@@ -20,9 +20,12 @@ Sur une machine **virtuelle** Ubuntu 22.04 lancer
 
 ```bash
 sudo apt update && sudo apt upgrade -y
-sudo apt install git python3-pip gcc make perl linux-headers-$(uname -r)
-wget https://download.virtualbox.org/virtualbox/7.0.14/VirtualBox-7.0.14-161095-Linux_amd64.run
-bash VirtualBox-7.0.14-161095-Linux_amd64.run
+sudo reboot
+sudo apt install -y git python3-pip gcc make perl linux-headers-$(uname -r)
+wget http://download.virtualbox.org/virtualbox/7.0.14/VBoxGuestAdditions_7.0.14.iso
+sudo mount -o loop VBoxGuestAdditions_7.0.14.iso /mnt
+cd /mnt
+sudo bash VBoxLinuxAdditions.run
 pip3 install jupyterlab
 git clone https://github.com/bbaranoff/TP_UPVD_OpenVPN/
 cd TP_UPVD_OpenVPN
